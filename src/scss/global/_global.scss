@@ -2,6 +2,13 @@
 *::before,
 *::after {
 	box-sizing: border-box;
+	font-family: 'Onest';
+}
+
+.wrapper {
+  max-width: 1440px;
+  padding: 0 70px 0 70px;
+  margin: 0 auto;
 }
 
 .flex {
@@ -46,6 +53,7 @@ html,
 body {
 	min-height: 100%;
 	position: relative;
+	background: #F6F3F8;
 }
 
 body {
@@ -63,4 +71,63 @@ h4,
 h5,
 h6 {
 	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.fs-16-400 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+} 
+
+.fs-18-500 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.fs-18-400 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.fs-18-600 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.fs-22-500 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.fs-28-500 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.fs-34-500 {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 43px;
+}
+
+.fs-43-500 {
+  font-weight: 500;
+  font-size: 43px;
+  line-height: 55px;
+}
+
+.fs-54-500 {
+  font-weight: 500;
+  font-size: 54px;
+  line-height: 69px;
 }
