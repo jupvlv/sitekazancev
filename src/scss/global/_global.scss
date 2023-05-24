@@ -73,6 +73,30 @@ h6 {
 	margin: 0;
 }
 
+::-webkit-scrollbar-track {
+	background-color: #E7E7E7; /*Цвет скролла*/
+} 
+::-webkit-scrollbar-thumb { 
+	border-radius: 5px; /*Закругление ползунка*/
+	background-color: #7064FB;; /*Цвет ползунка*/
+  height: 191px;
+
+} 
+::-webkit-scrollbar { 
+	width: 6px;  /*Толщина скролла*/
+
+}
+
+* {
+	scrollbar-color: #E7E7E7 #7064FB; /*Цвет скролла, цвет ползунка*/
+	scrollbar-width: 6px; /*Толщина скролла thin, auto*/
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 a {
 	text-decoration: none;
 	color: #000;

@@ -109,8 +109,6 @@ header {
 
 // Кнопка Бургер меню
 
-
-
 .ham6 {
   background: #FFFFFF;
   border-radius: 100px;
@@ -177,7 +175,9 @@ header {
   list-style: none;
   background-color: #F6F3F8;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-  transition-duration: .25s;
+  transition-duration: .10s;
+  transform: translateY(-100%);
+  transition: all .3s ease-in-out;
 }
 
 .menu-item {
@@ -185,7 +185,8 @@ header {
   display: block;
   color: #333;
   text-decoration: none;
-  transition-duration: .25s;
+  transition-duration: .10s;
+  transform: translateY(0px);
 }
 
 #menu-toggle {
@@ -196,27 +197,84 @@ header {
 #menu-toggle:checked~.menubox {
   visibility: visible;
   top: -30px;
+  transform: translateY(0px);
 }
 
 // Контент Меню
+.menubox {
+  border-radius: 0px 0px 50px 50px;
+}
+
 .menu-content {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
+  gap: 20px;
 }
 
-.menu-content-service {
+.menu-content-left_right  {
+  li {
+    a:hover {
+      color: #7064FB;
+    }
+  }
+  width: 100%;
   padding: 40px;
   background: #FFFFFF;
   border-radius: 20px;
+  max-width: 420px;
+  max-height: 522px;
+  overflow: auto;
+}
+
+.menu-content-pages {
+  a:first-child {
+    .menu-content-middle {
+      margin-top: 0;
+    }
+  }
+  height: 100%;
 }
 
 .menu-content-middle {
-  &:first-child {
-    margin-top: 0;
+  &:hover {
+    background: #B0A9F5;
+    color: #fff;
   }
   padding: 40px;
   background: #FFFFFF;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  min-width: 420px;
+  min-height: 160px;
+  width: 100%;
   margin-top: 21px;
 } 
+
+// АККАРДИОН
+
+.dropdownlink {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  transition: all 0.4s ease-out;
+  svg {
+    margin-top: 41px;
+    margin-left: 24px;
+  }
+}
+
+.submenuItems {
+  display: none;
+  li{
+    display: block;
+    color: #494949;
+    transition: all 0.4s ease-out;
+    margin-top: 20px;
+  }
+  li:first-child {
+    margin-top: 24px;
+  }
+}
+
