@@ -278,3 +278,113 @@ header {
   }
 }
 
+.menu-item::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  content: "";
+  transition: transform 0.2s ease-out;
+  color: #000;
+}
+
+.menu-item_show .accordion__header::after,
+.menu-item_slidedown .accordion__header::after {
+  transform: rotate(-180deg);
+}
+
+// КОНЕЦ HEADER
+
+
+
+
+
+// НАЧАЛО BODY
+
+.banner {
+  display: flex;
+  margin-top: 30px;
+}
+
+// Левый баннер
+.left-banner {
+
+}
+
+.top-banner {
+  h4 {
+      margin: 30px 40px;
+  }
+  position: relative;
+  border: 1px solid #B0A9F5;
+  border-radius: 20px;
+  min-width: 530px;
+  min-height: 530px;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(20, 0, 255, 0.3) 37.65%, rgba(20, 0, 255, 0.15) 71.94%, rgba(20, 0, 255, 0) 100%), #F8F8F8;
+}
+
+.top-banner-consultation {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  h2 {
+    color: #FFFFFF;
+  }
+  a {
+    margin-top: 20px;
+  }
+}
+
+.bottom-banner {
+  h4 {
+    color: #FFFFFF;
+  }
+    position: relative;
+    margin-top: 20px;
+    background: #B0A9F5;
+    border: 1px solid #B0A9F5;
+    border-radius: 20px;
+    max-width: 530px;
+    min-height: 300px;
+    width: 100%;
+}
+
+.bottom-banner-top {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 40px;
+}
+
+.bottom-banner-article {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  h2 {
+    color: #FFFFFF;
+    width: 400px;
+  }
+  a {
+    margin-top: 20px;
+  }
+}
+
+// Правый баннер
+
+.right-banner {
+  position: relative;
+  min-height: 850px;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(20, 0, 255, 0.3) 37.65%, rgba(20, 0, 255, 0.15) 71.94%, rgba(20, 0, 255, 0) 100%), #F8F8F8;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+.img-doctor img {
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+}
