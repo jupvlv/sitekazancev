@@ -376,13 +376,11 @@
             <img src="img/doctor-img.svg" alt="#">
           </div>
           <div class="doctor-main">
-            <h1>
-              <h2 class="fs-28-500">Казанцев Евгений Владимирович</h2>
-              <a href="#">
-                <h3 class="fs-18-500">Клиника пластической хирургии Шарм Голд</h3>
-              </a>
-              <h4 class="fs-18-400">Имеется спорная точка зрения, гласящая примерно следующее: сделанные на базе интернет-аналитики выводы набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Равным образом, синтетическое тестирование способствует подготовке и реализации своевременного выполнения сверхзадачи. Как принято считать, действия представителей оппозиции, вне зависимости от их уровня, должны быть функционально разнесены на независимые элементы.</h4>
-            </h1>
+            <h1 class="fs-28-500">Казанцев Евгений Владимирович</h1>
+            <a href="#">
+              <h2 class="fs-18-500">Клиника пластической хирургии Шарм Голд</h2>
+            </a>
+            <h3 class="fs-18-400">Имеется спорная точка зрения, гласящая примерно следующее: сделанные на базе интернет-аналитики выводы набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Равным образом, синтетическое тестирование способствует подготовке и реализации своевременного выполнения сверхзадачи. Как принято считать, действия представителей оппозиции, вне зависимости от их уровня, должны быть функционально разнесены на независимые элементы.</h3>
           </div>
         </div>
       </main>
@@ -439,9 +437,140 @@
         </div>
       </div>
     </section>
+
+    <!-- РАЗДЕЛ ЛИЦЕНЗИЯ -->
+    <section class="license">
+      <h2 class="fs-43-500">Лицензия</h2>
+      <div class="license-items">
+        <div class="license-img">
+          <img src="img/license.svg" alt="">
+        </div>
+        <div class="license-block">
+          <h3 class="fs-28-500">Лицензия ЛО-77-01-08424</h3>
+          <h4 class="fs-18-400">Имеется спорная точка зрения, гласящая примерно следующее: сделанные на базе интернет-аналитики выводы набирают
+          популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Равным
+          образом, синтетическое тестирование способствует подготовке и реализации своевременного выполнения сверхзадачи. Как
+          принято считать, действия представителей оппозиции, вне зависимости от их уровня, должны быть функционально разнесены на
+          независимые элементы.
+          </h4>
+          <div class="license-button">
+            <a class="button fs-18-500" href="#">
+              Все лицензии
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- РАЗДЕЛ КОНСУЛЬТАЦИИ -->
+    <section class="consultation">
+      <h2 class="fs-43-500">Запись на косультацию</h2>
+      <form action="">
+        <div class="consultation-items">
+          <div class="consultation-form" style="grid-area: a;">
+            <label for="name">
+              <svg>
+                <use xlink:href="img/sprite.svg#sprite--FIO"></use>
+              </svg>
+            </label>
+            <input class="consultation-form fs-18-400" id="name" type="text" placeholder="ФИО" required autofocus>  
+          </div>
+          <div class="consultation-form" style="grid-area: b;">
+            <label for="email">
+              <svg>
+                <use xlink:href="img/sprite.svg#sprite--email"></use>
+              </svg>
+            </label>
+            <input class="consultation-form fs-18-400" id="email" type="email" placeholder="Email" required autofocus>
+          </div>
+          <div class="consultation-form" style="grid-area: c;">
+            <label for="tel">
+              <svg>
+                <use xlink:href="img/sprite.svg#sprite--tel"></use>
+              </svg>
+            </label>
+            <input class="consultation-form fs-18-400" id="tel" type="tel" placeholder="Телефон" required autofocus>
+          </div>
+          <div class="consultation-form" style="grid-area: d;">
+            <label for="services">
+              <svg>
+                <use xlink:href="img/sprite.svg#sprite--services"></use>
+              </svg>
+            </label>
+            <input class="consultation-form fs-18-400" id="services" type="" placeholder="Операции" required autofocus>
+          </div>
+          <div class="consultation-form consultation-comment" style="grid-area: e;">
+            <label for="services">
+              <svg>
+                <use xlink:href="img/sprite.svg#sprite--comment"></use>
+              </svg>
+            </label>
+            <textarea name="comment" cols="220" rows="18" class="consultation-form fs-18-400" id="services" placeholder="Оставьте комментарий" autofocus resize></textarea>
+          </div>
+        </div>
+        <div class="consultation-btn">
+          <div class="button">
+            <input class="fs-18-500" type='submit' value='Отправить'>
+          </div>
+        </div>
+      </form>
+    </section>
   </div>
 	<footer class="footer">
-
+  <div class="wrapper">
+    <div class="logo-footer">
+      <img src="img/logo-footer.svg" alt="#">
+    </div>
+    <div class="footer-items">
+      <div class="footer-site-map">
+        <h4 class="fs-28-500">Карта сайта</h4>
+        <div class="footer-map-links">
+          <a class="fs-18-500" href="#">Лицензии</a>
+          <a class="fs-18-500" href="#">Политика конфиденциальности</a>
+          <a class="fs-18-500" href="#">Галерея работ</a>
+        </div>
+      </div>
+      <div class="footer-contacts">
+        <h4 class="fs-28-500">Контакты</h4>
+        <div class="footer-contacts-number">
+          <img src="img/footer-tel.svg" alt="#">
+          <a class="fs-18-500" href="tel:+7(999)-123-24-23">+7(999)-123-24-23</a>
+        </div>
+        <div class="footer-contacts-email">
+          <img src="img/footer-email.svg" alt="#">
+          <a class="fs-18-500" href="mailto:Pochta@mail.com">Pochta</a>
+        </div>
+      </div>
+      <div class="footer-social">
+        <h4 class="fs-28-500">Соц. цети</h4>
+        <div class="footer-social-items">
+          <div class="vkontakte">
+            <a class="flex-center fs-18-500" href="#">
+            <img src="img/footer-vk.svg" alt="">
+              VKontakte
+            </a>
+          </div>
+          <div class="telegram">
+            <a class="flex-center fs-18-500" href="#">
+            <img src="img/footer-telegram.svg" alt="">
+              Telegram
+            </a>
+          </div>
+          <div class="odnok">
+            <a class="flex-center fs-18-500" href="#">
+            <img src="img/footer-odnok.svg" alt="">
+              Odnoklasniki
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <h2 class="fs-16-400">2023 “Пластическая хирургия”</h2>
+      <p class="fs-16-400">Design Maxim Kutukov</p>
+    </div>
+  </div>
 </footer>
 
 	<script src="js/libs.min.js"></script>
