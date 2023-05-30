@@ -476,6 +476,7 @@
             </label>
             <input class="consultation-form fs-18-400" id="name" type="text" placeholder="ФИО" required autofocus>  
           </div>
+
           <div class="consultation-form" style="grid-area: b;">
             <label for="email">
               <svg>
@@ -484,6 +485,7 @@
             </label>
             <input class="consultation-form fs-18-400" id="email" type="email" placeholder="Email" required autofocus>
           </div>
+
           <div class="consultation-form" style="grid-area: c;">
             <label for="tel">
               <svg>
@@ -492,14 +494,21 @@
             </label>
             <input class="consultation-form fs-18-400" id="tel" type="tel" placeholder="Телефон" required autofocus>
           </div>
-          <div class="consultation-form" style="grid-area: d;">
-            <label for="services">
-              <svg>
-                <use xlink:href="img/sprite.svg#sprite--services"></use>
-              </svg>
-            </label>
-            <input class="consultation-form fs-18-400" id="services" type="" placeholder="Операции" required autofocus>
+
+          <!-- Изначально не активна ни одна опция -->
+          <div id="animal-select" class="customselect">
+            <img src="img/services.svg" alt="">
+            <div class="title">Выберите</div>
+            <ul>
+              <!-- значение хранится в свойстве data-value -->
+              <li data-value="bird">Птицы</li>
+              <li data-value="fish">Рыбы</li>
+              <li data-value="animal">Звери</li>
+              <li data-value="dino">Динозавры</li>
+              <li data-value="simplest">Одноклеточные</li>
+            </ul>
           </div>
+
           <div class="consultation-form consultation-comment" style="grid-area: e;">
             <label for="services">
               <svg>
