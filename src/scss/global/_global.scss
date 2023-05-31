@@ -11,6 +11,14 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 769px) {
+  .wrapper {
+    max-width: 768px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+}
+
 .flex {
 	display: flex;
 	align-items: flex-start;

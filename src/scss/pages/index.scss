@@ -2,6 +2,12 @@ header {
   margin-top: 30px;
 }
 
+@media screen and (max-width: 769px) {
+  header {
+    margin-top: 24px;
+  }
+}
+
 .wrapper {
   position: relative;
 }
@@ -22,6 +28,16 @@ header {
 .logo {
   position: relative;
   z-index: 10;
+}
+
+@media screen and (max-width: 769px) {
+  .logo {
+    height: 25px;
+    width: 196px;
+    img {
+      width: 100%;
+    }
+  }
 }
 
 // Кнопка с желтым фоном
@@ -71,6 +87,12 @@ header {
   }
 }
 
+@media screen and (max-width: 769px) {
+  .button-record {
+    display: none;
+  }
+}
+
 // Поиск
 .search-relative {
   position: relative;
@@ -92,6 +114,12 @@ header {
     right: 20px;
     width: 32px;
     height: 32px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .search {
+
   }
 }
 
@@ -378,7 +406,7 @@ header {
 
 .right-banner {
   position: relative;
-  min-height: 850px;
+  max-height: 850px;
   width: 100%;
   border: 1px solid #B0A9F5;
   background: linear-gradient(0deg, rgba(20, 0, 255, 0.3) 37.65%, rgba(20, 0, 255, 0.15) 71.94%, rgba(20, 0, 255, 0) 100%), #F8F8F8;
@@ -695,32 +723,37 @@ header {
   background: #FFFFFF;
   border-radius: 200px;
   position: relative;
+  border: 1px solid #0e0e0f;
+  z-index: 5;
+  img {
+    z-index: 1;
+  }
 }
 
 .customselect .title {
-  height: 20px;
   border: none;
-  margin: 14px;
+  margin: 10px;
   width: 100%;
   box-sizing: border-box;
   padding: 2px;
-  line-height: 14px;
+  line-height: 23px;
   cursor: pointer;
   text-align: left;
   z-index: 1;
+  font-size: 18px;
+  color: #858585;
 }
 
 .customselect li {
-  padding: 2px;
+  margin: 25px 30px 0 41px;
   cursor: pointer;
-}
-
-.customselect li:nth-child(even) {
-  background-color: #f0f8ff;
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 .customselect li:hover {
-  background-color: #7fffd4;
+  color: #7064FB;
 }
 
 .customselect ul {
@@ -735,16 +768,16 @@ header {
   box-sizing: border-box;
   top: 35px;
   left: 0;
-  padding-top: 25px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  border-radius: 0px 0px 30px 30px;
 }
 
 .customselect.open ul {
   display: block;
 }
 
-.customselect.open  {
-  display: block;
-}
+
 
 // FOOTER
 
