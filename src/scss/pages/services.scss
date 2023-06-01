@@ -1,0 +1,30 @@
+
+.services-main-banner-left {
+  margin-top: 30px;
+  background: linear-gradient(0deg, rgba(20, 0, 255, 0.3) 37.65%, rgba(20, 0, 255, 0.15) 71.94%, rgba(20, 0, 255, 0) 100%),#F8F8F8;
+  border: 1px solid #B0A9F5;
+  border-radius: 20px;
+  max-width: 860px;
+  max-height: 400px;
+  width: 100%;
+  height: 100%;
+  padding: 30px 40px 40px 40px;
+}
+
+.service-main-banner-left-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  img {
+    height: 6px;
+    width: 6px;
+  }
+}
+
+.service-main-banner-left-bottom {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  height: 100%;
+  color: #FFFFFF;
+}
