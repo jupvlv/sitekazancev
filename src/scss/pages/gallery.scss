@@ -1,0 +1,34 @@
+.gallery-banner-text {
+  max-width: 639px;
+}
+
+
+.slider {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.project__next img,
+.project__prev img {
+  width: 50px;
+  height: 20px;
+}
+
+.project__foto img {
+  max-width: 420px;
+  width: 100%;
+  border: 1px solid #fff;
+
+}
+
+.slick-slide {
+  padding-top: 20px;
+}
+
+.slick-center {
+  padding-top: 0;
+}
+
+.slick-center img {
+  max-width: 420px;
+}

@@ -1,0 +1,60 @@
+.gallery-banner-text {
+  h2 {
+    margin-top: 18px;
+  }
+}
+
+.g-gallery {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.g-gallery-services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 315px);
+  gap: 20px;
+}
+
+.g-gallery-services a {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 20px 20px 30px 20px;
+  position: relative;
+  .g-service-card {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    
+    h3 {
+      margin-top: 29px;
+    }
+  }
+  &:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    background: #B0A9F5;
+
+    svg {
+      fill: #FFFFFF;
+    }
+
+    h3 {
+      color: #FFFFFF;
+    }
+  }
+}
+
+.g-gallery-go {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #FFFFFF;
+  img {
+    margin-left: 14px;
+  }
+}

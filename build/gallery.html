@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="Gulp pack for easy html/php markup development">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<title>Kazancev / Пластическая хирургия</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Описание страницы">
+	<meta name="robots" content="index,follow" />
+	<meta name="keywords" content="ключ 1, ключ 2, ключ 3…" />
+</head>
+
+
+<body>
+  <header class="header">
+  <div class="wrapper">
+    <div class="header-items">
+      <div class="header-left">
+
+        <!-- logo -->
+        <div class="logo">
+          <a href="#">
+            <img src="img/logo.svg" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="header-right">
+        <!-- Кнопка Записи -->
+        <div class="button-record">
+          <a href="#" class="button fs-18-500">Записаться на прием</a>
+        </div>
+
+        <!-- Поиск -->
+        <div class="search">
+          <form class="search-relative" action="">
+            <input id="search" type="text" placeholder="Поиск">
+            <label for="search">
+              <a href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#sprite--search"></use>
+                </svg>
+              </a>
+            </label>
+          </form>
+        </div>
+
+        <!-- Кнопка Языка -->
+        <div class="lang">
+          <a class="fs-18-400" href="#">
+            EN
+          </a>
+        </div>
+
+        <!-- Бургер меню -->
+        <div class="burger-menu">
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-btn" for="menu-toggle">
+              <span>
+                <svg class="ham6" viewBox="0 0 100 100" width="50" onclick="this.classList.toggle('active')">
+                  <path class="top"
+                    d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272" />
+                  <path class="middle"
+                    d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272" />
+                  <path class="bottom"
+                    d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272" />
+                </svg>
+              </span>
+            </label>
+          
+          <ul class="menubox">
+            <div class="menu-content">
+              <div class="menu-content-left_right">
+                <h3>
+                  <a class="fs-28-500" href="#">Услуги</a>
+                </h3>
+                <div class="accordion-menu">
+                  <div>
+                    <li class="dropdownlink">
+                      <a class="fa fa-road menu-item fs-22-500" aria-hidden="true" href="#">Блефаропластика
+                      </a>
+                      <!-- <svg class="arrow" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L6 6L11 1" stroke="#232323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg> -->
+                    </li>
+                    <ul class="submenuItems">
+                      <li><a class="fs-18-400" href="#">Блефаропластика верхних век</a></li>
+                      <li><a class="fs-18-400" href="#">Блефаропластика нижних век</a></li>
+                      <li><a class="fs-18-400" href="#">Круговая Блефаропластика</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <li class="dropdownlink"><a class="accordion__header menu-item fs-22-500" href="#">Ринопластика </a></li>
+                    <ul class="submenuItems">
+                      <li><a class="fs-18-400" href="#">Блефаропластика верхних век</a></li>
+                      <li><a class="fs-18-400" href="#">Блефаропластика нижних век</a></li>
+                      <li><a class="fs-18-400" href="#">Круговая Блефаропластика</a></li>
+                    </ul>
+                  </div>
+                  <div class="accordion__item">
+                    <li><a class="accordion__header menu-item fs-22-500" href="#">Абдоминопластика</a></li>
+                  </div>
+                  <div class="accordion__item">
+                    <li><a class="accordion__header menu-item fs-22-500" href="#">Маммопластика</a></li>
+                  </div>
+                  <div class="accordion__item">
+                    <li><a class="accordion__header menu-item fs-22-500" href="#">Отопластика</a></li>
+                  </div>
+                  <div class="accordion__item">
+                    <li><a class="accordion__header menu-item fs-22-500" href="#">Подтяжка лица</a></li>
+                  </div>
+                  <div class="accordion__item">
+                    <li><a class="accordion__header menu-item fs-22-500" href="#">Липоскульптура тела</a></li>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-content-pages">
+                <a href="#">
+                  <div class="menu-content-middle fs-28-500">
+                    <li>Галарея работ</li>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="menu-content-middle fs-28-500">
+                    <li>Контакты</li>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="menu-content-middle fs-28-500">
+                    <li>Статьи</li>
+                  </div>
+                </a>
+              </div>
+
+              <div class="menu-content-left_right">
+                <h3>
+                  <a class="fs-28-500" href="#">Лицензии</a>
+                </h3>
+                <li><a class="menu-item fs-22-500" href="#">Лицензия 1</a></li>
+                <li><a class="menu-item fs-22-500" href="#">Лицензия 2 </a></li>
+                <li><a class="menu-item fs-22-500" href="#">Лицензия 3</a></li>
+                <li><a class="menu-item fs-22-500" href="#">Лицензия 4</a></li>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div class="wrapper">
+  <!-- Верхний баннер -->
+  <div class="services-main-banner-flex">
+    <div class="services-main-banner-left">
+      <div class="service-main-banner-left-top">
+        <a href="#">
+          <p class="fs-14-400">Главная</p>
+        </a>
+        <img src="img/ellipse.svg" alt="">
+        <a href="#">
+          <p class="fs-14-400">Галерея работ</p>
+        </a>
+        <img src="img/ellipse.svg" alt="">
+        <a href="#">
+          <p class="fs-14-400">Абдоминопластика фото до и после</p>
+        </a>
+      </div>
+      <div class="service-main-banner-left-bottom">
+        <div class="gallery-banner-text">
+          <h1 class="fs-54-500">Абдоминопластика фото до и после</h1>
+        </div>
+        <img src="img/gallery-banner-img.svg" alt="">
+      </div>
+    </div>
+    <div class="services-main-banner-right">
+      <div class="service-main-banner-right-top">
+        <p class="fs-18-500">Статья</p>
+      </div>
+      <div class="service-main-banner-right-bottom">
+        <h1 class="fs-34-500">Ринопластика это
+          безопастно</h1>
+        <a class="fs-18-500" href="#">
+          <div class="button">
+            Подробнее
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Свайперы -->
+
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <div class="project__prev">
+          <img src="https://media.msufcu.org/publicsites/publicsite/icons/arrow_left_gray.png">
+        </div>
+        <div class="slider">
+  
+          <div class="project__foto">
+            <img
+              src="https://images.unsplash.com/photo-1512300872216-54ef7791f155?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=18b9a3e2bbc98783513eea4cb4b6b9bd&auto=format&fit=crop&w=600&q=60"
+              alt="">
+  
+          </div>
+          <div class="project__foto">
+            <img
+              src="https://images.unsplash.com/photo-1512300872216-54ef7791f155?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=18b9a3e2bbc98783513eea4cb4b6b9bd&auto=format&fit=crop&w=600&q=60"
+              alt="">
+  
+          </div>
+          <div class="project__foto">
+            <img
+              src="https://images.unsplash.com/photo-1512300872216-54ef7791f155?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=18b9a3e2bbc98783513eea4cb4b6b9bd&auto=format&fit=crop&w=600&q=60"
+              alt="">
+  
+          </div>
+          <div class="project__foto">
+            <img
+              src="https://images.unsplash.com/photo-1512300872216-54ef7791f155?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=18b9a3e2bbc98783513eea4cb4b6b9bd&auto=format&fit=crop&w=600&q=60"
+              alt="">
+  
+          </div>
+  
+        </div>
+  
+        <div class="project__next">
+          <img src="http://www.clker.com/cliparts/B/5/C/M/6/i/right-grey-arrow.svg">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="wrapper">
+    <div class="logo-footer">
+      <img src="img/logo-footer.svg" alt="#">
+    </div>
+    <div class="footer-items">
+      <div class="footer-site-map">
+        <h4 class="fs-28-500">Карта сайта</h4>
+        <div class="footer-map-links">
+          <a class="fs-18-500" href="#">Лицензии</a>
+          <a class="fs-18-500" href="#">Политика конфиденциальности</a>
+          <a class="fs-18-500" href="#">Галерея работ</a>
+        </div>
+      </div>
+      <div class="footer-contacts">
+        <h4 class="fs-28-500">Контакты</h4>
+        <div class="footer-contacts-number">
+          <img src="img/footer-tel.svg" alt="#">
+          <a class="fs-18-500" href="tel:+7(999)-123-24-23">+7(999)-123-24-23</a>
+        </div>
+        <div class="footer-contacts-email">
+          <img src="img/footer-email.svg" alt="#">
+          <a class="fs-18-500" href="mailto:Pochta@mail.com">Pochta</a>
+        </div>
+      </div>
+      <div class="footer-social">
+        <h4 class="fs-28-500">Соц. цети</h4>
+        <div class="footer-social-items">
+          <div class="vkontakte">
+            <a class="flex-center fs-18-500" href="#">
+            <img src="img/footer-vk.svg" alt="">
+              VKontakte
+            </a>
+          </div>
+          <div class="telegram">
+            <a class="flex-center fs-18-500" href="#">
+            <img src="img/footer-telegram.svg" alt="">
+              Telegram
+            </a>
+          </div>
+          <div class="odnok">
+            <a class="flex-center fs-18-500" href="#">
+            <img src="img/footer-odnok.svg" alt="">
+              Odnoklasniki
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <h2 class="fs-16-400">2023 “Пластическая хирургия”</h2>
+      <p class="fs-16-400">Design Maxim Kutukov</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+
+</body>
+
+</html>
