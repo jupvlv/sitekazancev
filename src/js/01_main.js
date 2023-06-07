@@ -1,18 +1,14 @@
 // Слайдер галерея 
 
-$('.slider').slick({
-  slidesToShow: 3,
-  centerMode: true,
-  spaceBetween: 20,
-  slidesToScroll: 1,               
-  dots: false,
-  arrows:false,
-  infinite: true, 
-  variableWidth: true,  
-  arrows:true,
-  nextArrow: '.project__next',
-  prevArrow: '.project__prev',
-});
+  var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
 
 // Аккардион Операции
 function CustomSelect(options) {
