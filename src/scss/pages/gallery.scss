@@ -7,6 +7,7 @@
   width: 100%;
   height: 500px;
   margin-top: 15px;
+  --swiper-theme-color: #7064FB;
 }
 
 .swiper-wrapper {
@@ -47,3 +48,17 @@
   }
 }
 
+.swiper-pagination {
+  top: unset!important;
+  height: 5px!important;
+  bottom: 0;
+  max-width: 420px;
+  display: flex;
+  justify-content: center;
+  border-radius: 22px!important;
+}
+
+.swiper-pagination-progressbar {
+  background: #E7E7E7!important;
+  border-radius: 22px !important;
+}

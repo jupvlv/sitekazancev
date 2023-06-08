@@ -7,10 +7,10 @@
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
+        type: "progressbar",
       },
     });
 
-    // ЗУМ
 
 
 // Аккардион Операции
