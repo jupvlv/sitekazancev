@@ -11,8 +11,6 @@
       },
     });
 
-
-
 // Аккардион Операции
 function CustomSelect(options) {
   var elem = options.elem;
