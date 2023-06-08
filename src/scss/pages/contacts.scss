@@ -1,14 +1,76 @@
 .contacts {
-  display: flex;
+  margin-top: 100px;
 }
 
-.contacts-map {
-  margin-top: 100px;
+.contacts-flex {
+display: flex;
 }
 
 .map {
   margin-top: 25px;
-  border: 1px solid #B0A9F5;
-  border-radius: 20px;
 }
 
+iframe {
+  border: 1px solid #B0A9F5;
+    border-radius: 20px;
+}
+
+.contacts-info {
+  margin-left: 50px;
+  h2 {
+    margin-top: 60px;
+    color: #7064FB;;
+    &:first-child {
+      margin-top: 25px;
+    }
+  }
+}
+
+// Адрес
+
+.contacts-adres {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  gap: 15px;
+}
+
+// Контакты
+
+.contacts-tel {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  gap: 15px;
+}
+
+.contacts-mail {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+
+// Соц сети
+
+.contacts-vk {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  gap: 15px;
+}
+
+.contacts-telegram {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.contacts-odno {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 15px;
+}

@@ -1,0 +1,45 @@
+.articles-items {
+  margin-top: 100px;
+}
+
+.articles-block {
+  background: #FFFFFF;
+  border-radius: 10px;
+  width: 100%;
+  padding: 30px 40px;
+  margin-top: 20px;
+  &:first-child {
+    margin-top: 0;
+  }
+  &:hover {
+    background: #B0A9F5;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+}
+
+.article-type {
+  margin-top: 25px;
+}
+
+.article-text {
+  margin-top: 12px;
+}
+
+.article-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .article-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FFFFFF;
+  }
+}
+
+.articles-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
