@@ -84,6 +84,7 @@ header {
 
   &:hover {
     color: #fff;
+    background: none;
 
     &:before {
       width: 100%;
@@ -251,7 +252,7 @@ header {
 
 .menu-content-left_right  {
   li {
-    a:hover {
+    span:hover {
       color: #7064FB;
     }
   }
@@ -328,9 +329,12 @@ header {
   color: #000;
 }
 
-.menu-item_show .accordion__header::after,
-.menu-item_slidedown .accordion__header::after {
-  transform: rotate(-180deg);
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.ju-custom {
+  transition: 0.5s;
 }
 
 // КОНЕЦ HEADER

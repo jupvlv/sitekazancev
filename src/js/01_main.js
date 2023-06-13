@@ -11,6 +11,12 @@
       },
     });
 
+    $(function() {
+  $('.ju-custom').on('click', function() {
+    $(this).toggleClass('rotate-180');
+  });
+});
+
 // Аккардион Операции
 function CustomSelect(options) {
   var elem = options.elem;
@@ -76,30 +82,26 @@ var animalSelect = new CustomSelect({
 $(function() {
   var Accordion = function(el, multiple) {
     this.el = el || {};
-    // more then one submenu open?
     this.multiple = multiple || false;
-    
+
     var dropdownlink = this.el.find('.dropdownlink');
-    dropdownlink.on('click',
-                    { el: this.el, multiple: this.multiple },
-                    this.dropdown);
+    dropdownlink.on('click', { el: this.el, multiple: this.multiple }, this.dropdown);
   };
-  
+
   Accordion.prototype.dropdown = function(e) {
     var $el = e.data.el,
-        $this = $(this),
-        //this is the ul.submenuItems
-        $next = $this.next();
-    
+      $this = $(this),
+      $next = $this.next();
+
     $next.slideToggle();
     $this.parent().toggleClass('open');
-    
-    if(!e.data.multiple) {
-      //show only one menu at the same time
-      $el.find('.submenuItems').not($next).slideUp().parent().removeClass('open');
-    }
-  }
-  
-  var accordion = new Accordion($('.accordion-menu'), false);
-})
+    $this.find('.ju-custom').toggleClass('rotate-180'); // Добавленный код
 
+    if (!e.data.multiple) {
+      $el.find('.submenuItems').not($next).slideUp().parent().removeClass('open');
+      $el.find('.ju-custom').not($this.find('.ju-custom')).removeClass('rotate-180'); // Добавленный код
+    }
+  };
+
+  var accordion = new Accordion($('.accordion-menu'), false);
+});
