@@ -19,6 +19,14 @@
   }
 }
 
+@media screen and (max-width: 375px) {
+  .wrapper {
+    max-width: 375px;
+    padding: 0 25px;
+    margin: 0 auto;
+  }
+}
+
 .flex {
 	display: flex;
 	align-items: flex-start;

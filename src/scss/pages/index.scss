@@ -1,6 +1,6 @@
 header {
   margin-top: 30px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     margin-top: 24px;
   }
 }
@@ -27,7 +27,7 @@ header {
   z-index: 10;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 375px) {
   .logo {
     height: 25px;
     width: 196px;
@@ -90,7 +90,7 @@ header {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 375px) {
   .button-record {
     display: none;
   }
@@ -118,7 +118,7 @@ header {
     width: 32px;
     height: 32px;
   }
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     display: none;
   }
 }
@@ -132,7 +132,7 @@ header {
   border-radius: 100px;
   padding: 14px 12px 13px 13px;
   color: #796CF9;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       padding: 11px 10px;
       font-weight: 500;
       font-size: 14px;
@@ -151,7 +151,7 @@ header {
   -webkit-tap-highlight-color: transparent;
   transition: transform 400ms;
   user-select: none;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     width: 40px;
     padding: 0;
   }
@@ -216,7 +216,7 @@ header {
   transition-duration: .10s;
   transform: translateY(-100%);
   transition: all .3s ease-in-out;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     padding: 24px;
   }
 }
@@ -228,7 +228,7 @@ header {
   text-decoration: none;
   transition-duration: .10s;
   transform: translateY(0px);
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     margin-top: 20px;
   }
 }
@@ -259,7 +259,7 @@ header {
   justify-content: space-between;
   margin-top: 40px;
   gap: 20px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     flex-direction: column;
     margin-top: 64px;
   }
@@ -272,7 +272,7 @@ header {
     }
   }
   a {
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       font-weight: 500;
       font-size: 18px;
       line-height: 23px;
@@ -310,7 +310,7 @@ header {
   min-height: 160px;
   width: 100%;
   margin-top: 21px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     min-width: unset;
     min-height: unset;
     font-weight: 500;
@@ -329,12 +329,12 @@ header {
   svg {
     margin-top: 41px;
     margin-left: 24px;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       margin-top: 27px;
     }
   }
   span {
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       font-weight: 500;
       font-size: 16px;
       line-height: 20px;
@@ -350,7 +350,7 @@ header {
     transition: all 0.4s ease-out;
     margin-top: 20px;
     a {
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 375px) {
         font-weight: 400;
         font-size: 14px;
         line-height: 18px;
@@ -359,7 +359,7 @@ header {
   }
   li:first-child {
     margin-top: 24px;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       margin-top: 20px;
     }
   }
@@ -397,7 +397,7 @@ header {
 .banner {
   display: flex;
   margin-top: 30px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     flex-direction: column-reverse;
   }
 }
@@ -407,7 +407,7 @@ header {
 .top-banner {
   h4 {
       margin: 30px 40px;
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 375px) {
           font-weight: 400;
           font-size: 12px;
           line-height: 15px;
@@ -422,7 +422,7 @@ header {
   min-height: 530px;
   width: 100%;
   background: linear-gradient(0deg, rgba(20, 0, 255, 0.3) 37.65%, rgba(20, 0, 255, 0.15) 71.94%, rgba(20, 0, 255, 0) 100%), #F8F8F8;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     min-width: unset;
     min-height: 160px;
     width: 100%;
@@ -436,12 +436,12 @@ header {
   position: absolute;
   bottom: 40px;
   left: 40px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
       position: static;
     }
   h2 {
     color: #FFFFFF;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
         font-weight: 500;
         font-size: 20px;
         line-height: 25px;
@@ -450,7 +450,7 @@ header {
   }
   a {
     margin-top: 20px;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
         font-weight: 500;
         font-size: 14px;
         line-height: 18px;
@@ -462,7 +462,7 @@ header {
 .bottom-banner {
   h4 {
     color: #FFFFFF;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
         font-weight: 400;
         font-size: 12px;
         line-height: 15px;
@@ -476,7 +476,7 @@ header {
   max-width: 530px;
   min-height: 300px;
   width: 100%;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     padding: 16px 20px 20px;
     min-height: 180px;
     border-radius: 10px;
@@ -487,11 +487,11 @@ header {
   display: flex;
   justify-content: space-between;
   margin: 30px 40px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
       margin: 0;
     }
   img {
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
         width: 40px;
       }
   }
@@ -501,13 +501,13 @@ header {
   position: absolute;
   bottom: 40px;
   left: 40px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
       position: static;
     }
   h2 {
     color: #FFFFFF;
     width: 100%;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
         font-weight: 500;
         font-size: 20px;
         line-height: 25px;
@@ -515,7 +515,7 @@ header {
   }
   a {
     margin-top: 20px;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
         font-weight: 500;
         font-size: 14px;
         line-height: 18px;
@@ -534,7 +534,7 @@ header {
   background: linear-gradient(0deg, rgba(20, 0, 255, 0.3) 37.65%, rgba(20, 0, 255, 0.15) 71.94%, rgba(20, 0, 255, 0) 100%), #F8F8F8;
   border-radius: 20px;
   margin-left: 20px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     margin-left: 0;
     margin-bottom: 20px;
     min-width: unset;
@@ -550,13 +550,13 @@ header {
   position: absolute;
   bottom: 0;
   left: 53px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     position: static;
     width: 100%;
   }
 }
 .banner-doctor-img {
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     padding: 47px 20px 0 20px;
     display: flex;
     
@@ -568,14 +568,14 @@ header {
   bottom: 40px;
   left: 40px;
   color: #FFFFFF;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     bottom: 20px;
     left: 20px;
   }
 }
 
 .banner-doctor-name {
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
       font-weight: 500;
       font-size: 24px;
       line-height: 31px;  
@@ -584,7 +584,7 @@ header {
 
 .banner-doctor-special {
   margin-top: 10px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
       font-weight: 400;
       font-size: 18px;
       line-height: 23px;
@@ -598,7 +598,7 @@ header {
 .service {
   margin-top: 100px;
   text-align: center;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     margin-top: 60px;
   }
 }
@@ -609,7 +609,7 @@ header {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 400px);
   gap: 20px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: unset;
     margin-top: 30px;
@@ -640,7 +640,7 @@ header {
       color: #FFFFFF;
     }
   }
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     background: #B0A9F5;
     border-radius: 10px;
     svg {
@@ -666,7 +666,7 @@ header {
 }
 
 .service-card {
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     padding: 0 11px 18px 11px;
     max-height: 200px;
     height: 100vh;
@@ -676,14 +676,14 @@ header {
 // РАЗДЕЛ О ДОКТОРЕ
 .doctor {
   margin-top: 100px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
       margin-top: 60px;
     }
 }
 
 .doctor-text h2 {
   text-align: center;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
       font-weight: 500;
       font-size: 24px;
       line-height: 31px;
@@ -699,12 +699,12 @@ header {
   justify-content: center;
   img {
     margin-top: 30px;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       width: 189px;
       margin-top: 13px;
     }
   }
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     min-width: unset;
     width: 100%;
     max-height: 230px;
@@ -722,13 +722,13 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       max-height: unset;
       margin-left: 0;
       margin-top: 24px;
     }
   }
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     flex-direction: column;
     margin-top: 30px;
   }
@@ -737,7 +737,7 @@ header {
 .doctor-main {
   h1 {
     margin-bottom: 16px;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
         font-weight: 500;
         font-size: 18px;
         line-height: 23px;
@@ -747,7 +747,7 @@ header {
   h2 {
     margin-bottom: 30px;
     color: #7064FB;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
         font-weight: 500;
         font-size: 14px;
         line-height: 18px;
@@ -756,7 +756,7 @@ header {
   }
   h3{
     line-height: 160%;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
         font-weight: 400;
         font-size: 14px;
         line-height: 160%;
@@ -769,7 +769,7 @@ header {
       background: #B0A9F5;
       border-radius: 15px;
       margin-top: 30px;
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 375px) {
         display: none;
       }
     }
@@ -778,15 +778,28 @@ header {
 
 
 // РАЗДЕЛ ГАЛАРЕЯ
-
+@media screen and (max-width: 375px) {
+  .mySwiperMain {
+    width: calc(100% + 50px);
+    margin-left: -25px!important;
+    margin-right: -25px!important;
+    .swiper-slide {
+      width: auto!important;
+    }
+    .swiper-slide img {
+      width: 240px;
+      height: 230px;
+    }
+  }
+}
 .gallery {
   margin-top: 100px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
       margin-top: 60px;
-    }
+  }
   h2 {
     text-align: center;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       font-weight: 500;
       font-size: 24px;
       line-height: 31px;
@@ -822,7 +835,7 @@ header {
   justify-content: center;
   margin-top: 50px;
   a {
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       font-weight: 500;
       font-size: 14px;
       line-height: 18px;
@@ -837,12 +850,12 @@ header {
 
 .advantages {
   margin-top: 100px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     margin-top: 60px;
   }
   h2{
     text-align: center;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       font-weight: 500;
       font-size: 24px;
       line-height: 31px;
@@ -858,7 +871,7 @@ header {
   grid-column-gap: 75px;
   grid-row-gap: 20px;
   margin-top: 50px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     grid-template-columns: repeat(2, 155px);
     grid-template-rows: unset;
     gap: 15px;
@@ -874,17 +887,17 @@ header {
   justify-content: center;
   background: #FFFFFF;
   border-radius: 10px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     min-height: 155px;
     padding: 18px;
     }
   img {
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       width: 48px;
     }
   }
   p {
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       font-weight: 500;
       font-size: 14px;
       line-height: 18px;
@@ -896,12 +909,12 @@ header {
 // РАЗДЕЛ ЛИЦЕНЗИЯ 
 .license {
   margin-top: 100px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     margin-top: 60px;
   }
   h2 {
     text-align: center;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       font-weight: 500;
       font-size: 24px;
       line-height: 31px;
@@ -912,12 +925,12 @@ header {
 .license-items {
   display: flex;
   margin-top: 50px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     flex-direction: column;
   }
 }
 .license-img {
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     margin: 0 auto;
   }
 }
@@ -925,7 +938,7 @@ header {
   max-width: 530px;
   max-height: 600px;
   border-radius: 20px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     max-width: 240px;
     width: 100%;
     max-height: unset;
@@ -938,7 +951,7 @@ header {
   flex-direction: column;
   justify-content: center;
   h3 {
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       font-weight: 500;
       font-size: 18px;
       line-height: 23px;
@@ -948,7 +961,7 @@ header {
   h4 {
     margin-top: 30px;
     line-height: 160%;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       font-weight: 400;
       font-size: 14px;
       line-height: 160%;
@@ -962,12 +975,12 @@ header {
       background: #B0A9F5;
       border-radius: 15px;
       margin-top: 30px;
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 375px) {
         display: none;
       }
     }
   }
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     margin-left: 0;
   }
 }
@@ -975,13 +988,13 @@ header {
 .license-button {
   margin-top: 40px;
   a {
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       font-weight: 500;
       font-size: 14px;
       line-height: 18px;
     }
   }
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -992,12 +1005,12 @@ header {
 // РАЗДЕЛ КОНСУЛЬТАЦИИ 
 .consultation {
   margin-top: 100px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     margin-top: 60px;
   }
   h2 {
     text-align: center;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       font-weight: 500;
       font-size: 24px;
       line-height: 31px;
@@ -1014,7 +1027,7 @@ header {
   grid-template-rows: 60px 60px 240px;
   grid-template-areas: "a b" "c d" "e e";
   justify-content: center;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -1034,7 +1047,7 @@ header {
     border: none;
     padding: 14px;
     width: 100%;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       font-weight: 400;
       font-size: 14px;
       line-height: 160%;
@@ -1056,7 +1069,7 @@ header {
     resize: none;
     border: none;
     outline: none;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       font-weight: 400;
       font-size: 14px;
       line-height: 160%;
@@ -1076,7 +1089,7 @@ header {
     background: none;
     border: none;
     cursor: pointer;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       font-weight: 500;
       font-size: 14px;
       line-height: 18px;
@@ -1116,7 +1129,7 @@ header {
   z-index: 1;
   font-size: 18px;
   color: #858585;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     font-weight: 400;
     font-size: 14px;
     line-height: 160%;
@@ -1165,14 +1178,14 @@ header {
   margin-top: 100px;
   padding-top: 40px;
   padding-bottom: 19px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     margin-top: 60px;
   }
 }
 
 .logo-footer {
   img {
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       width: 196px;
     }
   }
@@ -1183,19 +1196,19 @@ header {
   justify-content: space-between;
   margin-top: 40px;
   color: #fff;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     flex-direction: column;
     margin-top: 30px;
   }
   h4 {
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       font-weight: 500;
       font-size: 18px;
       line-height: 23px;
     }
   }
   img {
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       width: 24px;
     }
   }
@@ -1208,13 +1221,13 @@ header {
   flex-direction: column;
   gap: 20px;
   margin-top: 25px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     margin-top: 20px;
     gap: 15px;
   }
   a {
     color: #fff;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       font-weight: 400;
       font-size: 14px;
       line-height: 18px;
@@ -1224,7 +1237,7 @@ header {
 
 // Контакты
 .footer-contacts {
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     margin-top: 30px;
   }
 }
@@ -1232,7 +1245,7 @@ header {
   margin-top: 25px;
   display: flex;
   align-items: center;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     margin-top: 20px;
   }
   img {
@@ -1240,7 +1253,7 @@ header {
   }
   a {
     color: #fff;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       font-weight: 400;
       font-size: 14px;
       line-height: 18px;
@@ -1252,7 +1265,7 @@ header {
   margin-top: 20px;
   display: flex;
   align-items: center;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     margin-top: 15px;
   }
   img {
@@ -1260,7 +1273,7 @@ header {
   }
   a {
     color: #fff;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       font-weight: 400;
       font-size: 14px;
       line-height: 18px;
@@ -1270,7 +1283,7 @@ header {
 
 // Соц. сети
 .footer-social {
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     margin-top: 30px;
   }
 }
@@ -1279,13 +1292,13 @@ header {
   margin-top: 25px;
   display: flex;
   gap: 20px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     margin-top: 20px;
     gap: 15px;
   }
   a {
     color: #fff;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       font-weight: 400;
       font-size: 14px;
       line-height: 18px;
@@ -1294,7 +1307,7 @@ header {
   img {
     margin-right: 15px;
   }
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     flex-direction: column;
   }
 }
@@ -1310,18 +1323,18 @@ header {
   margin-top: 75px;
   color: #fff;
   position: relative;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 375px) {
     margin-top: 46px;
   }
   h2 {
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       font-weight: 400;
       font-size: 12px;
       line-height: 15px;
     }
   }
   p {
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
       font-weight: 400;
       font-size: 12px;
       line-height: 15px;
@@ -1336,7 +1349,7 @@ header {
       background: #fff;
       border-radius: 20px;
       top: -20px;
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 375px) {
         height: 2px;
       }
     }

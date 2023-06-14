@@ -1,20 +1,37 @@
 // Слайдер галерея 
 
-  var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 20,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        type: "progressbar",
-      },
-    });
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    type: "progressbar",
+  },
+});
 
-    $(function() {
+$(function() {
   $('.ju-custom').on('click', function() {
     $(this).toggleClass('rotate-180');
   });
+});
+
+var swiperMain = new Swiper(".mySwiperMain", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  breakpoints: {
+    320: {
+      slidesPerView: 'auto',
+      loop: true,
+      centeredSlides: true,
+      spaceBetween: 15
+    },
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    }
+  }
 });
 
 
