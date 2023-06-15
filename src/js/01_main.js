@@ -97,6 +97,8 @@ var animalSelect = new CustomSelect({
   elem: document.getElementById('animal-select')
 });
 
+
+
 $(function() {
   var Accordion = function(el, multiple) {
     this.el = el || {};

@@ -11,7 +11,7 @@
   margin: 0 auto;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .wrapper {
     max-width: 768px;
     padding: 0 50px;
@@ -19,9 +19,9 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   .wrapper {
-    max-width: 375px;
+    max-width: 480px;
     padding: 0 25px;
     margin: 0 auto;
   }
