@@ -20,16 +20,14 @@
   height: 100vh;
   padding: 30px 40px 40px 40px;
   @media screen and (max-width: 768px) {
-    max-width: unset;
     min-width: unset;
-    width: auto;
     max-height: 250px;
     padding: 20px;
   }
   @media screen and (max-width: 480px) {
     max-width: unset;
       min-width: unset;
-      width: auto;
+      width: 100%;
     max-height: 210px;
     padding: 20px;
   }
@@ -64,8 +62,8 @@
   h1 {
     @media screen and (max-width: 768px) {
       font-weight: 500;
-      font-size: 28px;
-      line-height: 36px;
+      font-size: 54px;
+      line-height: 69px;
     }
     @media screen and (max-width: 480px) {
       font-weight: 500;
@@ -77,9 +75,7 @@
     @media screen and (max-width: 480px) {
       width: 40px;
     }
-    @media screen and (max-width: 768px) {
-      width: 60px;
-    }
+
   }
 }
 
@@ -95,12 +91,8 @@
   width: 100%;
   height: 100vh;
   @media screen and (max-width: 768px) {
-      max-width: unset;
-      min-width: unset;
-      width: auto;
-      max-height: 250px;
-      padding: 20px;
-    }
+    display: none;
+  }
   @media screen and (max-width: 480px) {
     display: none;
   }
@@ -144,7 +136,12 @@
   display: flex;
   gap: 20px;
   margin-top: 20px;
+  @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   @media screen and (max-width: 480px) {
+    display: flex;
     flex-direction: column;
   }
 }
@@ -160,6 +157,13 @@
   flex-direction: column;
   align-items: end;
   justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    min-width: unset;
+    max-width: unset;
+    min-height: 120px;
+    height: auto;
+    width: 100%;
+  }
   @media screen and (max-width: 480px) {
     min-width: unset;
     max-width: unset;
@@ -176,6 +180,9 @@
   }
   h2 {
     color: #7064FB;
+    @media screen and (max-width: 768px) {
+      margin-right: auto;
+    }
   }
   &:hover{
     background: #B0A9F5;
@@ -194,6 +201,9 @@
   display: flex;
   gap: 20px;
   margin-top: 100px;
+  @media screen and (max-width: 768px) {
+    margin-top: 80px;
+  }
   @media screen and (max-width: 480px) {
     margin-top: 60px;
     flex-direction: column;
@@ -231,6 +241,9 @@
 .without-operation {
   margin-top: 100px;
   position: relative;
+  @media screen and (max-width: 768px) {
+    margin-top: 80px;
+  }
   @media screen and (max-width: 480px) {
     margin-top: 60px;
   }
@@ -252,6 +265,9 @@
   .main-text{
     line-height: 160%;
     margin-top: 50px;
+    @media screen and (max-width: 768px) {
+      margin-top: 30px;
+    }
     @media screen and (max-width: 480px) {
       margin-top: 30px;
     }
@@ -278,6 +294,9 @@
     background-size: 12px 10px;
     background-repeat: repeat-x;
     background-position: 0 center;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
     @media screen and (max-width: 480px) {
         display: none;
       }
@@ -350,6 +369,9 @@
 // РАЗДЕЛ как проводится пластика
 .plastik {
   margin-top: 100px;
+  @media screen and (max-width: 768px) {
+    margin-top: 80px;
+  }
   @media screen and (max-width: 480px) {
     margin-top: 60px;
   }
@@ -364,6 +386,9 @@
   h4 {
     margin-top: 50px;
     text-align: center;
+    @media screen and (max-width: 768px) {
+      margin-top: 40px;
+    }
     @media screen and (max-width: 480px) {
       font-weight: 500;
       font-size: 18px;
@@ -377,7 +402,12 @@
   display: flex;
   gap: 20px;
   margin-top: 40px;
+  @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   @media screen and (max-width: 480px) {
+    display: flex;
     flex-direction: column;
     margin-top: 30px;
     gap: 15px;
@@ -428,6 +458,11 @@
         "d b e";
   gap: 20px;
   margin-top: 50px;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: none;
+    grid-area: none;
+  }
   @media screen and (max-width: 480px) {
     display: flex;
     flex-direction: column;
@@ -442,6 +477,9 @@
   background-size: 140%;
   max-width: 420px;
   max-height: 280px;
+  @media screen and (max-width: 480px) {
+    background: #FFFFFF;
+  }
   @media screen and (max-width: 480px) {
     max-width: unset;
     max-height: 245px;
@@ -463,8 +501,14 @@
 
 .plastik-grid-middle {
   max-height: 580px;
+  @media screen and (max-width: 768px) {
+    max-height: 280px;
+  }
   img {
     max-height: 580px;
+    @media screen and (max-width: 768px) {
+      max-height: 280px;
+    }
     @media screen and (max-width: 480px) {
       max-height: 245px;
     }
