@@ -62,8 +62,8 @@
   h1 {
     @media screen and (max-width: 768px) {
       font-weight: 500;
-      font-size: 54px;
-      line-height: 69px;
+      font-size: 34px;
+      line-height: 43px;
     }
     @media screen and (max-width: 480px) {
       font-weight: 500;
@@ -72,6 +72,9 @@
     }
   }
   img {
+    @media screen and (max-width: 768px) {
+      width: 80px;
+    }
     @media screen and (max-width: 480px) {
       width: 40px;
     }
@@ -461,7 +464,6 @@
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: none;
-    grid-area: none;
   }
   @media screen and (max-width: 480px) {
     display: flex;
@@ -477,8 +479,9 @@
   background-size: 140%;
   max-width: 420px;
   max-height: 280px;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     background: #FFFFFF;
+    grid-area: inherit!important;
   }
   @media screen and (max-width: 480px) {
     max-width: unset;

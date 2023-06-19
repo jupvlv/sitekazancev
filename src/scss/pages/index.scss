@@ -25,6 +25,9 @@ header {
 .logo {
   position: relative;
   z-index: 10;
+  &.hidden {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   .logo {
@@ -148,11 +151,16 @@ header {
 // Кнопка переключения языка
 .lang {
   z-index: 10;
+  display: flex;
   a {
   background: #FFFFFF;
   border-radius: 100px;
-  padding: 14px 12px 13px 13px;
   color: #796CF9;
+  display: flex;
+  height: 50px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
     @media screen and (max-width: 480px) {
       padding: 11px 10px;
       font-weight: 500;
@@ -163,7 +171,9 @@ header {
 }
 
 // Кнопка Бургер меню
-
+.burger-menu {
+  height: 50px;
+}
 .ham6 {
   background: #FFFFFF;
   border-radius: 100px;
@@ -172,10 +182,6 @@ header {
   -webkit-tap-highlight-color: transparent;
   transition: transform 400ms;
   user-select: none;
-  @media screen and (max-width: 480px) {
-    width: 40px;
-    padding: 0;
-  }
 }
 
 .ham6 path {
