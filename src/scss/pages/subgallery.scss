@@ -1,12 +1,27 @@
 .gallery-banner-text {
   h2 {
     margin-top: 18px;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.gallery-mobile-text {
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
   }
 }
 
 .g-gallery {
   margin-top: 100px;
   text-align: center;
+  @media screen and (max-width: 768px){
+    margin-top: 30px;
+  }
 }
 
 .g-gallery-services {
@@ -14,6 +29,14 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 315px);
   gap: 20px;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 215px);
+  }
+  @media screen and (max-width: 480px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
 }
 
 .g-gallery-services a {
@@ -22,25 +45,52 @@
   border-radius: 20px;
   padding: 20px 20px 30px 20px;
   position: relative;
+      @media screen and (max-width: 768px) {
+          background: #B0A9F5;
+        }
   .g-service-card {
     height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: end;
-    
     h3 {
       margin-top: 29px;
+      @media screen and (max-width: 768px) {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        margin-top: 15px;
+        color: #FFFFFF;
+      }
+      @media screen and (max-width: 480px) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 24px;
+        color: #FFFFFF;
+      }
+    }
+    svg {
+      @media screen and (max-width: 768px) {
+        width: 80px;
+        height: 80px;
+        fill: #FFFFFF;
+      }
+      @media screen and (max-width: 480px) {
+        width: 72px;
+        height: 72px;
+        fill: #FFFFFF;
+        margin-top: 50px;
+      }
     }
   }
   &:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     background: #B0A9F5;
-
     svg {
       fill: #FFFFFF;
     }
-
     h3 {
       color: #FFFFFF;
     }
@@ -56,5 +106,10 @@
   color: #FFFFFF;
   img {
     margin-left: 14px;
+  }
+  span {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 }
