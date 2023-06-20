@@ -37,6 +37,9 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+    
   a {
     @media screen and (max-width: 480px) {
       font-weight: 400;
@@ -54,7 +57,7 @@
   display: flex;
   align-items: end;
   justify-content: space-between;
-  height: 100%;
+  height: 90%;
   color: #FFFFFF;
   @media screen and (max-width: 480px) {
     
@@ -315,7 +318,7 @@
   padding-top: 16px;
   color: #FFFFFF;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .stages-text {

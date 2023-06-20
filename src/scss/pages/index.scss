@@ -58,6 +58,7 @@ header {
   z-index: 10;
   @media screen and (max-width: 768px) {
     display: none;
+    height: 50px;
   }
 }
 
@@ -152,7 +153,7 @@ header {
 .lang {
   z-index: 10;
   display: flex;
-  a {
+  span {
   background: #FFFFFF;
   border-radius: 100px;
   color: #796CF9;
@@ -161,6 +162,8 @@ header {
   width: 50px;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 3;
     @media screen and (max-width: 480px) {
       padding: 11px 10px;
       font-weight: 500;
@@ -168,6 +171,55 @@ header {
       line-height: 18px;
     }
   }
+}
+
+.selector {
+  position: relative;
+  display: inline-block;
+}
+
+.selected-option {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #F6F3F8;
+  color: #333;
+  cursor: pointer;
+}
+
+.options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  top: 15px;
+  z-index: 0;
+  width: 100%;
+  margin-top: 4px;
+  padding-top: 40px;
+  list-style: none;
+  background-color: #FFFFFF;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.option {
+  display: block;
+  padding: 8px 12px;
+  color: #333;
+  text-decoration: none;
+}
+
+.selector:hover .options {
+  display: block;
+}
+
+.selector .options li:first-child a {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.selector .options li:last-child a {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 // Кнопка Бургер меню
@@ -273,6 +325,29 @@ header {
   top: -30px;
   transform: translateY(0px);
 }
+
+.overlay:hover .menubox {
+  visibility: visible;
+  top: -30px;
+  transform: translateY(0px);
+}
+
+// Затемнение фона 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: none;
+}
+
+#menu-toggle:checked~.overlay {
+  display: block;
+}
+
 
 // Контент Меню
 .menubox {
@@ -1370,7 +1445,7 @@ header {
   background: #FFFFFF;
   border-radius: 200px;
   position: relative;
-  z-index: 5;
+  z-index: 1;
   img {
     z-index: 1;
   }

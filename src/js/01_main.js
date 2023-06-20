@@ -34,6 +34,31 @@ var swiperMain = new Swiper(".mySwiperMain", {
   }
 });
 
+// Селектор переключения языка
+const selectedOption = document.querySelector('.selected-option');
+const options = document.querySelectorAll('.option');
+
+options.forEach(option => {
+  option.addEventListener('click', (event) => {
+    event.preventDefault();
+    const selectedValue = option.getAttribute('data-value');
+    selectedOption.textContent = selectedValue;
+    document.querySelector('.options').style.display = 'none';
+  });
+});
+
+document.addEventListener('click', (event) => {
+  const selector = document.querySelector('.selector');
+  if (!selector.contains(event.target)) {
+    document.querySelector('.options').style.display = 'none';
+  }
+});
+
+selectedOption.addEventListener('click', () => {
+  const options = document.querySelector('.options');
+  options.style.display = options.style.display === 'block' ? 'none' : 'block';
+});
+console.log("sss");
 
 // Аккардион Операции
 if (document.querySelector('.customselect')) {
@@ -100,11 +125,15 @@ if (document.querySelector('.customselect')) {
 
 
 
-
+// скрыть лого при выпадания меню
 $('.menu-btn').on('click', function() {
-  $('.logo').toggleClass('hidden');
+  if ($(window).width() < 769) {
+    $('.logo').toggleClass('hidden');
+  }
 });
 
+
+// Аккардион в меню
 $(function() {
   var Accordion = function(el, multiple) {
     this.el = el || {};
@@ -126,6 +155,45 @@ $(function() {
     if (!e.data.multiple) {
       $el.find('.submenuItems').not($next).slideUp().parent().removeClass('open');
       $el.find('.ju-custom').not($this.find('.ju-custom')).removeClass('rotate-180'); // Добавленный код
+    }
+  };
+
+  var accordion = new Accordion($('.accordion-menu'), false);
+});
+
+
+// Лицензии
+
+$(function() {
+  var Accordion = function(el, multiple) {
+    this.el = el || {};
+    this.multiple = multiple || false;
+
+    var dropdownlink = this.el.find('.menu-licence-mobile');
+    dropdownlink.on('click', { el: this.el, multiple: this.multiple }, this.dropdown);
+
+    // Открывать аккордеон, если ширина экрана больше 768px
+    if ($(window).width() >= 768) {
+      this.el.find('.menu-licence-mobile-submenu').slideDown();
+      this.el.find('.menu-licence-mobile').parent().addClass('open');
+      this.el.find('.ju-custom-licence').addClass('rotate-180');
+    }
+  };
+
+  Accordion.prototype.dropdown = function(e) {
+    if ($(window).width() < 768) { // Проверка ширины окна браузера
+      var $el = e.data.el,
+        $this = $(this),
+        $next = $this.next();
+
+      $next.slideToggle();
+      $this.parent().toggleClass('open');
+      $this.find('.ju-custom-licence').toggleClass('rotate-180');
+
+      if (!e.data.multiple) {
+        $el.find('.menu-licence-mobile-submenu').not($next).slideUp().parent().removeClass('open');
+        $el.find('.ju-custom-licence').not($this.find('.ju-custom-licence')).removeClass('rotate-180');
+      }
     }
   };
 

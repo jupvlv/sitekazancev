@@ -33,9 +33,15 @@
 
         <!-- Кнопка Языка -->
         <div class="lang">
-          <a class="fs-18-400" href="#">
-            EN
-          </a>
+          <div class="selector">
+            <span class="selected-option">EN</span>
+            <ul class="options">
+              <li><a class="option" href="#">EN</a></li>
+              <li><a class="option" href="#">FR</a></li>
+              <li><a class="option" href="#">ES</a></li>
+              <!-- Добавьте другие языки по вашему выбору -->
+            </ul>
+          </div>
         </div>
 
         <!-- Бургер меню -->
@@ -53,7 +59,7 @@
                 </svg>
               </span>
             </label>
-          
+              <div class="overlay"></div>
           <ul class="menubox">
             <div class="menu-content">
               <div class="menu-content-left_right">
@@ -177,7 +183,7 @@
                         <span class="fa fa-road menu-item fs-28-500">Лицензии
                         </span>
                       </h3>
-                      <svg class="ju-custom" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="ju-custom-licence" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L6 6L11 1" stroke="#232323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
                     </li>
