@@ -16,6 +16,23 @@ header {
   align-items: center;
 }
 
+// Липкое меню 
+/* Будем присваивать этот класс, чтобы блок прилипал */
+.sticky {
+  position: fixed;
+  top: 0;
+  background: #f6f3f8;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Добавляем отступ равный высоте меню к контенту */
+.sticky+.main {
+  padding-top: 50px;
+}
+
+
 .header-right {
   display: flex;
   align-items: center;
@@ -56,6 +73,7 @@ header {
 .button-record {
   position: relative;
   z-index: 10;
+  height: 50px;
   @media screen and (max-width: 768px) {
     display: none;
     height: 50px;
