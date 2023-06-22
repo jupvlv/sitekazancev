@@ -9,7 +9,7 @@
 
 <body>
   <div class="wrapper">
-      @@include('components/page-blocks/_header.html')
+    <!-- @@include('components/page-blocks/_header.html') -->
     <!-- ГЛАВНЫЙ БАННЕР -->
     <section class="banner">
       <div class="left-banner">
@@ -339,8 +339,10 @@
           </div>
 
           <!-- Изначально не активна ни одна опция -->
-          <div id="animal-select" class="customselect">        
-            <img src="img/services.svg" alt="">
+          <div id="animal-select" class="customselect">    
+            <svg>
+              <use xlink:href="img/sprite.svg#sprite--mechanism"></use>
+            </svg>    
             <p class="title">Операции</p>
             <ul>
               <!-- значение хранится в свойстве data-value -->
