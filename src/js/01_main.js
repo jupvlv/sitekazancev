@@ -16,15 +16,33 @@ function checkMarginToTop() {
 
 // Слайдер галерея 
 
+Fancybox.bind('[data-fancybox="gallery-1"]', {
+  // Your custom options
+});
+Fancybox.bind('[data-fancybox="gallery-2"]', {
+  // Your custom options
+});
+
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 20,
-  loop: true,
+  loop: false,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
     type: "progressbar",
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      spaceBetween: 0,
+    },
+    620: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    }
+  }
 });
 
 $(function() {
