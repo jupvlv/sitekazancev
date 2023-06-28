@@ -16,21 +16,21 @@ header {
   align-items: center;
 }
 
-// Липкое меню 
-/* Будем присваивать этот класс, чтобы блок прилипал */
-.sticky {
-  position: fixed;
-  top: 0;
-  background: #f6f3f8;
-  z-index: 10;
-  display: flex;
-  justify-content: space-between;
-}
+ // Липкое меню 
+// /* Будем присваивать этот класс, чтобы блок прилипал */
+// .sticky {
+//   position: fixed;
+//   top: 0;
+//   background: #f6f3f8;
+//   z-index: 10;
+//   display: flex;
+//   justify-content: space-between;
+// }
 
-/* Добавляем отступ равный высоте меню к контенту */
-.sticky+.main {
-  padding-top: 50px;
-}
+// /* Добавляем отступ равный высоте меню к контенту */
+// .sticky+.main {
+//   padding-top: 50px;
+// }
 
 
 .header-right {
@@ -592,6 +592,10 @@ header {
 
 .rotate-180 {
   transform: rotate(180deg);
+}
+
+.ju-custom-licence {
+  transition: 0.5s;
 }
 
 .ju-custom {

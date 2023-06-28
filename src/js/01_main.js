@@ -196,40 +196,4 @@ $(function() {
 });
 
 
-// Лицензии
 
-$(function() {
-  var Accordion = function(el, multiple) {
-    this.el = el || {};
-    this.multiple = multiple || false;
-
-    var dropdownlink = this.el.find('.menu-licence-mobile');
-    dropdownlink.on('click', { el: this.el, multiple: this.multiple }, this.dropdown);
-
-    // Открывать аккордеон, если ширина экрана больше 768px
-    if ($(window).width() >= 768) {
-      this.el.find('.menu-licence-mobile-submenu').slideDown();
-      this.el.find('.menu-licence-mobile').parent().addClass('open');
-      this.el.find('.ju-custom-licence').addClass('rotate-180');
-    }
-  };
-
-  Accordion.prototype.dropdown = function(e) {
-    if ($(window).width() < 768) { // Проверка ширины окна браузера
-      var $el = e.data.el,
-        $this = $(this),
-        $next = $this.next();
-
-      $next.slideToggle();
-      $this.parent().toggleClass('open');
-      $this.find('.ju-custom-licence').toggleClass('rotate-180');
-
-      if (!e.data.multiple) {
-        $el.find('.menu-licence-mobile-submenu').not($next).slideUp().parent().removeClass('open');
-        $el.find('.ju-custom-licence').not($this.find('.ju-custom-licence')).removeClass('rotate-180');
-      }
-    }
-  };
-
-  var accordion = new Accordion($('.accordion-menu'), false);
-});
