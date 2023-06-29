@@ -59,10 +59,17 @@
   justify-content: space-between;
   height: 90%;
   color: #FFFFFF;
-  @media screen and (max-width: 480px) {
-    
-  }
   h1 {
+    @media screen and (max-width: 1024px) {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 43px;
+      }
+    @media screen and (max-width: 900px) {
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 36px;
+    }
     @media screen and (max-width: 768px) {
       font-weight: 500;
       font-size: 34px;
@@ -121,6 +128,11 @@
   justify-content: end;
   color: #FFFFFF;
   h1 {
+      @media screen and (max-width: 900px) {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 36px;
+      }
       @media screen and (max-width: 768px) {
         font-weight: 500;
         font-size: 28px;
@@ -142,6 +154,11 @@
   display: flex;
   gap: 20px;
   margin-top: 20px;
+  @media screen and (max-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
   @media screen and (max-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -155,7 +172,7 @@
 .subbanner-item {
   border: 1px solid #7064FB;
   border-radius: 12px;
-  max-height: 150px;
+  max-height: 170px;
   max-width: 244px;
   height: 100vh;
   padding: 20px;
@@ -163,6 +180,12 @@
   flex-direction: column;
   align-items: end;
   justify-content: space-between;
+  @media screen and (max-width: 1024px) {
+    min-width: unset;
+    max-width: unset;
+    min-height: 120px;
+    width: 100%;
+  }
   @media screen and (max-width: 768px) {
     min-width: unset;
     max-width: unset;
@@ -209,6 +232,7 @@
   margin-top: 100px;
   @media screen and (max-width: 768px) {
     margin-top: 80px;
+    flex-direction: column;
   }
   @media screen and (max-width: 480px) {
     margin-top: 60px;
@@ -223,6 +247,12 @@
   height: 100vh;
   border-radius: 10px;
   background: url(../img/nophoto.png);
+  @media screen and (max-width: 768px) {
+    max-width: unset;
+    min-width: unset;
+    max-height: 400px;
+    background: #FFFFFF;
+  }
   @media screen and (max-width: 480px) {
     max-width: unset;
     min-width: unset;
@@ -236,6 +266,10 @@
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
+    @media screen and (max-width: 768px) {
+      max-height: unset;
+      max-width: unset;
+    }
     @media screen and (max-width: 480px) {
       max-width: unset;
       min-width: unset;
@@ -285,6 +319,9 @@
   padding: 0 65px;
   justify-content: space-between;
   margin-top: 50px;
+  @media screen and (max-width: 1270px) {
+    flex-direction: column;
+  }
   @media screen and (max-width: 480px) {
     padding: 0;
   }
@@ -300,7 +337,7 @@
     background-size: 12px 10px;
     background-repeat: repeat-x;
     background-position: 0 center;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1270px) {
       display: none;
     }
     @media screen and (max-width: 480px) {
@@ -331,6 +368,9 @@
     width: 210px;
     text-align: center;
     margin-top: 20px;
+    @media screen and (max-width: 1270px) {
+      
+    }
   }
 }
 
@@ -408,6 +448,11 @@
   display: flex;
   gap: 20px;
   margin-top: 40px;
+  @media screen and (max-width: 1280px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
   @media screen and (max-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -430,6 +475,10 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: end;
+    @media screen and (max-width: 1280px) {
+      max-width: unset;
+      height: unset;
+    }
     @media screen and (max-width: 480px) {
       max-width: unset;
       max-height: 170px;
@@ -437,6 +486,9 @@
     p {
       max-height: 240px;
       overflow: auto;
+      @media screen and (max-width: 1280px) {
+          margin-right: auto;
+        }
       @media screen and (max-width: 480px) {
         font-weight: 400;
         font-size: 14px;

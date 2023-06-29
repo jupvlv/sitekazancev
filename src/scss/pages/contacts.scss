@@ -17,7 +17,7 @@
 
 .contacts-flex {
 display: flex;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1280px) {
     flex-direction: column;
   }
 }
@@ -29,9 +29,12 @@ display: flex;
 iframe {
   border: 1px solid #B0A9F5;
   border-radius: 20px;
+
+  @media screen and (max-width: 1280px) {
+    width: 100%;
+  }
   @media screen and (max-width: 768px) {
     height: 350px;
-    width: 100%;
   }
   @media screen and (max-width: 480px) {
     height: 208px;
@@ -41,7 +44,7 @@ iframe {
 
 .contacts-info {
   margin-left: 50px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1280px) {
     margin: 0;
   }
   @media screen and (max-width: 480px) {
