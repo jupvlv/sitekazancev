@@ -65,15 +65,11 @@
         font-size: 34px;
         line-height: 43px;
       }
-    @media screen and (max-width: 900px) {
-      font-weight: 500;
-      font-size: 28px;
-      line-height: 36px;
-    }
     @media screen and (max-width: 768px) {
       font-weight: 500;
       font-size: 34px;
       line-height: 43px;
+      margin-right: 10px;
     }
     @media screen and (max-width: 480px) {
       font-weight: 500;

@@ -1,6 +1,12 @@
 .gallery-banner-text {
   max-width: 639px;
-  
+  p {
+    @media screen and (max-width: 1024px) {
+      font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+    }
+  }
 }
 
 .gallery-item {
